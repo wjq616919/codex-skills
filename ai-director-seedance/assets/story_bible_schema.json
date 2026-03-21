@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AI Director Story Bible",
+  "type": "object",
+  "required": ["title", "scene_count", "characters", "locations", "continuity_risks"],
+  "properties": {
+    "title": { "type": "string" },
+    "premise_excerpt": { "type": "string" },
+    "scene_count": { "type": "integer" },
+    "characters": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "mentions"],
+        "properties": {
+          "name": { "type": "string" },
+          "mentions": { "type": "integer" },
+          "scene_ids": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        }
+      }
+    },
+    "locations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "scene_ids"],
+        "properties": {
+          "name": { "type": "string" },
+          "scene_ids": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        }
+      }
+    },
+    "props": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "time_of_day": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "theme_cues": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "continuity_risks": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Director for Seedance"
+  short_description: "Script-aware Seedance direction and shot prompt workflows"
+  default_prompt: "Use $ai-director-seedance to turn this script into a structured shot plan and Seedance 2.0 prompts with inferred or locked style handling."

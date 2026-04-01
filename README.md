@@ -1,9 +1,10 @@
 # Codex Skills
 
-This repository packages two custom Codex skills:
+This repository packages three custom Codex skills:
 
 - `ai-director-seedance`
 - `storyboard-director`
+- `xiaobai-fenjing`
 
 ## Included Skills
 
@@ -26,6 +27,15 @@ Use when you want a professional storyboard workflow:
 - object state control
 - storyboard-style prompt output
 
+### `xiaobai-fenjing`
+Use when you want to restructure a script or scene text into a professional Chinese shot list in Lao Bai's storyboard method:
+
+- scene-level dramatic change identification
+- main-shot and connector-shot planning
+- transition naturalness checks
+- beat-preserving rhythm restructuring
+- director-style Chinese shot list output
+
 ## Install
 
 Copy the skill folders into your local Codex skills directory:
@@ -34,6 +44,7 @@ Copy the skill folders into your local Codex skills directory:
 mkdir -p ~/.codex/skills
 cp -R ai-director-seedance ~/.codex/skills/
 cp -R storyboard-director ~/.codex/skills/
+cp -R xiaobai-fenjing ~/.codex/skills/
 ```
 
 Then start a new Codex session and invoke:
@@ -41,6 +52,7 @@ Then start a new Codex session and invoke:
 ```text
 $ai-director-seedance
 $storyboard-director
+$xiaobai-fenjing
 ```
 
 ## Requirements

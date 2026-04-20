@@ -1,8 +1,9 @@
 # Codex Skills
 
-This repository packages three custom Codex skills:
+This repository packages four custom Codex skills:
 
 - `ai-director-seedance`
+- `continuity-director`
 - `storyboard-director`
 - `xiaobai-fenjing`
 
@@ -16,6 +17,15 @@ Use when you want an AI director workflow oriented toward Seedance/Jimeng-style 
 - pacing and timing checks
 - lighting and sound design
 - continuity and object-state control
+
+### `continuity-director`
+Use when you want a dedicated continuity workflow between adjacent shots, prompt segments, or reference frames:
+
+- pose continuity and action-phase handoff
+- eyeline direction repair
+- camera-axis and scene-space consistency
+- lighting-source and atmosphere continuity
+- bridge-shot repair for broken joins
 
 ### `storyboard-director`
 Use when you want a professional storyboard workflow:
@@ -43,6 +53,7 @@ Copy the skill folders into your local Codex skills directory:
 ```bash
 mkdir -p ~/.codex/skills
 cp -R ai-director-seedance ~/.codex/skills/
+cp -R continuity-director ~/.codex/skills/
 cp -R storyboard-director ~/.codex/skills/
 cp -R xiaobai-fenjing ~/.codex/skills/
 ```
@@ -51,6 +62,7 @@ Then start a new Codex session and invoke:
 
 ```text
 $ai-director-seedance
+$continuity-director
 $storyboard-director
 $xiaobai-fenjing
 ```
